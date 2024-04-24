@@ -1,0 +1,27 @@
+app:
+  name: movie-catalog-service
+  description: Welcome to ${app.name}
+
+my:
+  greeting: Greetings from Spring Boot!
+  list:
+    values: One,Two,Three
+
+spring:
+  application:
+    name: movie-catalog-service
+  profiles:
+    active: test
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+server:
+  port: 8081
+
+db:
+  connection: http://___
+  host: 127.0.0.1
+  port: 1200
+
+management.endpoints.web.exposure.include: "*"
